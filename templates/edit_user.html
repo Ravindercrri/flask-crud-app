@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+    <h1>Edit User</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name() }}
+        </p>
+        <p>
+            {{ form.age.label }}<br>
+            {{ form.age() }}
+        </p>
+        <p>
+            {{ form.date.label }}<br>
+            {{ form.date() }}
+        </p>
+        <p>
+            {{ form.gender.label }}<br>
+            {{ form.gender() }}
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

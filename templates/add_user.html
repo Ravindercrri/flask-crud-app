@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add/Edit User</title>
+</head>
+<body>
+    <h1>Add/Edit User</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}<br>
+        {{ form.age.label }} {{ form.age() }}<br>
+        {{ form.date.label }} {{ form.date() }}<br>
+        {{ form.gender.label }} {{ form.gender() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
